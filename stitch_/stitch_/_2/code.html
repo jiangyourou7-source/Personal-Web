@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>深度洞察 - 智造专家</title>
+<!-- Google Fonts: Inter & Work Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Work+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e2e2eb",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#8b2e01",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#434653",
+                        "on-secondary-container": "#616363",
+                        "secondary-container": "#dfe0e0",
+                        "inverse-surface": "#2e3037",
+                        "surface-bright": "#faf8ff",
+                        "tertiary-fixed": "#ffdbcf",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "on-error-container": "#93000a",
+                        "on-background": "#191b22",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "on-secondary-fixed-variant": "#454747",
+                        "inverse-primary": "#b1c5ff",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#191b22",
+                        "surface-container-high": "#e7e7f0",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#2559bd",
+                        "surface-dim": "#d9d9e2",
+                        "primary": "#00327d",
+                        "primary-container": "#0047ab",
+                        "outline-variant": "#c3c6d5",
+                        "surface-container-low": "#f3f3fc",
+                        "on-tertiary-container": "#ffaa8a",
+                        "secondary-fixed": "#e2e2e2",
+                        "primary-fixed": "#dae2ff",
+                        "on-primary-container": "#a5bdff",
+                        "on-tertiary-fixed-variant": "#802900",
+                        "outline": "#737784",
+                        "surface": "#faf8ff",
+                        "on-tertiary-fixed": "#380d00",
+                        "on-primary-fixed-variant": "#00419e",
+                        "tertiary": "#651f00",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "on-primary-fixed": "#001946",
+                        "inverse-on-surface": "#f0f0f9",
+                        "background": "#faf8ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e2e2eb",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#ededf6",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "secondary": "#5d5f5f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "element-gap": "24px",
+                        "container-max": "1200px",
+                        "margin": "auto",
+                        "base": "8px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Work Sans"],
+                        "label-bold": ["Inter"],
+                        "headline-md": ["Work Sans"],
+                        "body-lg": ["Inter"],
+                        "display-xl": ["Work Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="bg-white dark:bg-slate-950 docked full-width top-0 z-50 border-b border-slate-200 dark:border-slate-800 flat no shadows sticky">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+<!-- Brand -->
+<div class="text-2xl font-black tracking-tighter text-blue-900 dark:text-white">
+                智造专家
+            </div>
+<!-- Navigation Links -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Work_Sans'] font-medium text-base tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200 active:scale-95 transition-transform" href="#">首页</a>
+<a aria-current="page" class="font-['Work_Sans'] font-medium text-base tracking-tight text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200 active:scale-95 transition-transform" href="#">深度文章</a>
+<a class="font-['Work_Sans'] font-medium text-base tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200 active:scale-95 transition-transform" href="#">关于我</a>
+<a class="font-['Work_Sans'] font-medium text-base tracking-tight text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200 active:scale-95 transition-transform" href="#">联系方式</a>
+</div>
+<!-- Trailing Action -->
+<div class="hidden md:block">
+<button class="bg-primary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-DEFAULT hover:bg-primary-container transition-colors active:scale-95">
+                    立即诊断
+                </button>
+</div>
+<!-- Mobile Menu Toggle (Icon) -->
+<button aria-label="Menu" class="md:hidden text-primary">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-gutter pt-24 pb-section-gap">
+<!-- Page Header -->
+<section class="mb-24 max-w-4xl">
+<h1 class="font-display-xl text-display-xl text-on-surface mb-6">
+                深度见解：关于软件、增长与中小企业生存
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                剥离营销话术，直击制造企业数字化转型的核心痛点。在这里，我们只谈真相、效率与如何避免成为沉没成本的受害者。
+            </p>
+</section>
+<!-- Featured Article (Asymmetric Layout) -->
+<article class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center mb-section-gap group cursor-pointer">
+<div class="md:col-span-7 overflow-hidden rounded-DEFAULT border border-outline-variant">
+<img alt="Featured article image" class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="dramatic lighting on a precision CNC milling machine cutting metal, sparks flying, industrial manufacturing environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClIDysPioP6UcCRA69BjSQP-Bm3O4o-xBg8vtVolL5K15TGy7R4Sbhc39a--eDSAAjhSaquPE0De_7F8UrTQSjw-6LTu6tlZUEIMqqpKGk7TIYhMQybzbNLJrqqsDzXHaizN1EjhGre_LQUfj9d5A8ST4pA8eFf2nLbz2CkZtSdKuih61SpzSkuX3GxNLkuL-dZCoGpxl5FkjViNg7bw9VWryZhVPk-U1rM1RAeropWWLYDvkrXldf3A6bvdQ2yRrEC1kg0xQ2HF5U"/>
+</div>
+<div class="md:col-span-5 md:pl-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-bold text-label-bold text-primary tracking-widest uppercase">重磅深度</span>
+<span class="w-12 h-px bg-outline-variant"></span>
+<time class="font-label-bold text-label-bold text-on-surface-variant">2024.03.15</time>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 group-hover:text-primary transition-colors duration-300">
+                    为什么90%的中小企业软件项目会失败？
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                    大多数失败并非因为技术本身，而是因为脱离了业务实际的盲目跟风。我们要探讨的是如何在这个充满泡沫的SaaS时代，守住企业的核心利润流，避免成为被割的韭菜。
+                </p>
+<div class="inline-flex items-center font-label-bold text-label-bold text-primary group-hover:text-primary-container transition-colors">
+                    阅读全文 <span class="material-symbols-outlined ml-2 text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Minimalist Article List -->
+<section class="max-w-3xl mx-auto border-t border-outline-variant pt-12">
+<article class="py-12 border-b border-outline-variant group cursor-pointer">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-bold text-label-bold text-primary tracking-widest uppercase">效率提升</span>
+<time class="font-label-bold text-label-bold text-on-surface-variant ml-auto">2024.02.28</time>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4 group-hover:text-primary transition-colors duration-300">
+                    管理软件的真相：越简单越高效
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    不要被大厂的复杂架构迷惑。对于资源有限的中小制造企业来说，能精准解决眼前瓶颈的精简系统，胜过一切花哨且冗余的“全能”平台。复杂性是执行力的天敌。
+                </p>
+</article>
+<article class="py-12 border-b border-outline-variant group cursor-pointer">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-bold text-label-bold text-primary tracking-widest uppercase">数字化迷思</span>
+<time class="font-label-bold text-label-bold text-on-surface-variant ml-auto">2024.01.10</time>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4 group-hover:text-primary transition-colors duration-300">
+                    警惕伪需求：你是需要ERP，还是只需要规范流程？
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    很多时候，试图引入昂贵的软件只是管理层用来掩盖管理懒惰的创可贴。在写下第一行代码或签下采购合同前，请先用纸和笔梳理清楚你的业务流。
+                </p>
+</article>
+<article class="py-12 group cursor-pointer">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-bold text-label-bold text-primary tracking-widest uppercase">团队建设</span>
+<time class="font-label-bold text-label-bold text-on-surface-variant ml-auto">2023.11.05</time>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4 group-hover:text-primary transition-colors duration-300">
+                    系统上线后，真正的战役才刚刚开始
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    采购软件只是万里长征的第一步。如何打破部门壁垒，克服员工的抗拒心理，让冷冰冰的数据真正反哺生产决策，才是决定项目生死存亡的关键因素。
+                </p>
+</article>
+</section>
+<!-- Pagination / Load More -->
+<div class="flex justify-center mt-16">
+<button class="border border-outline-variant text-on-surface font-label-bold text-label-bold px-8 py-4 rounded-DEFAULT hover:border-primary hover:text-primary transition-colors active:scale-95">
+                加载更多洞察
+            </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full border-t mt-32 border-slate-200 dark:border-slate-800 flat no shadows">
+<div class="max-w-7xl mx-auto px-8 py-16 flex flex-col md:flex-row justify-between items-center gap-8">
+<!-- Brand Logo / Copyright -->
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-lg font-bold text-blue-900 dark:text-white">
+                    智造专家
+                </div>
+<div class="text-blue-900 dark:text-blue-400 font-['Work_Sans'] text-sm uppercase tracking-widest">
+                    © 2024 工业制造软件专家. 保留所有权利。
+                </div>
+</div>
+<!-- Footer Links -->
+<nav class="flex gap-6 items-center">
+<a class="font-['Work_Sans'] text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all opacity-100 hover:opacity-80" href="#">
+                    隐私政策
+                </a>
+<a class="font-['Work_Sans'] text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all opacity-100 hover:opacity-80" href="#">
+                    服务条款
+                </a>
+<a class="font-['Work_Sans'] text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all opacity-100 hover:opacity-80" href="#">
+                    粤ICP备12345678号
+                </a>
+</nav>
+</div>
+</footer>
+</body></html>

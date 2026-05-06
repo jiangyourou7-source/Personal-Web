@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>首页 - 智造专家</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Work+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e2e2eb",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#8b2e01",
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#434653",
+                    "on-secondary-container": "#616363",
+                    "secondary-container": "#dfe0e0",
+                    "inverse-surface": "#2e3037",
+                    "surface-bright": "#faf8ff",
+                    "tertiary-fixed": "#ffdbcf",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "on-error-container": "#93000a",
+                    "on-background": "#191b22",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "on-secondary-fixed-variant": "#454747",
+                    "inverse-primary": "#b1c5ff",
+                    "error-container": "#ffdad6",
+                    "on-surface": "#191b22",
+                    "surface-container-high": "#e7e7f0",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#2559bd",
+                    "surface-dim": "#d9d9e2",
+                    "primary": "#00327d",
+                    "primary-container": "#0047ab",
+                    "outline-variant": "#c3c6d5",
+                    "surface-container-low": "#f3f3fc",
+                    "on-tertiary-container": "#ffaa8a",
+                    "secondary-fixed": "#e2e2e2",
+                    "primary-fixed": "#dae2ff",
+                    "on-primary-container": "#a5bdff",
+                    "on-tertiary-fixed-variant": "#802900",
+                    "outline": "#737784",
+                    "surface": "#faf8ff",
+                    "on-tertiary-fixed": "#380d00",
+                    "on-primary-fixed-variant": "#00419e",
+                    "tertiary": "#651f00",
+                    "primary-fixed-dim": "#b1c5ff",
+                    "on-primary-fixed": "#001946",
+                    "inverse-on-surface": "#f0f0f9",
+                    "background": "#faf8ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e2e2eb",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#ededf6",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "secondary": "#5d5f5f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "element-gap": "24px",
+                    "container-max": "1200px",
+                    "margin": "auto",
+                    "base": "8px",
+                    "gutter": "32px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Work Sans"],
+                    "label-bold": ["Inter"],
+                    "headline-md": ["Work Sans"],
+                    "body-lg": ["Inter"],
+                    "display-xl": ["Work Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-white dark:bg-slate-950 full-width sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1200px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-blue-900 dark:text-white">智造专家</div>
+<nav class="hidden md:flex items-center gap-8 font-['Work_Sans'] font-medium text-base tracking-tight">
+<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200 active:scale-95 transition-transform" href="#">首页</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200 active:scale-95 transition-transform" href="#">深度文章</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200 active:scale-95 transition-transform" href="#">关于我</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-200 active:scale-95 transition-transform" href="#">联系方式</a>
+</nav>
+<button class="bg-primary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-DEFAULT hover:bg-primary-container transition-colors hidden md:block">
+                立即诊断
+            </button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="w-full bg-surface-container-lowest overflow-hidden border-b border-outline-variant">
+<div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center">
+<div class="w-full lg:w-7/12 px-8 py-16 lg:py-32 flex flex-col justify-center">
+<h1 class="font-display-xl text-display-xl text-on-background mb-8 max-w-3xl">
+                    别再为无效的软件烧钱了，让技术成为您的杠杆。
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl">
+                    我帮助中国中小企业用最简单的软件方案，解决最复杂的管理问题。摒弃浮华的营销词汇，回归工程学的严谨与效率。
+                </p>
+<div class="flex items-center gap-element-gap">
+<button class="bg-primary text-on-primary font-label-bold text-label-bold px-8 py-4 rounded-DEFAULT hover:bg-primary-container transition-colors shadow-sm">
+                        获取免费诊断方案
+                    </button>
+<a class="font-label-bold text-label-bold text-primary flex items-center gap-2 hover:underline" href="#articles">
+                        阅读深度洞察 <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="w-full lg:w-5/12 h-[512px] lg:h-auto self-stretch bg-surface-container relative">
+<img alt="Professional portrait" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] contrast-125" data-alt="medium shot of a confident professional male expert in a crisp white shirt standing in a modern industrial setting with strong natural side lighting and high contrast shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0ehixdOo2u-fKoolZy-XDUQqNZt3tfh3KMpV-78OWicMQekLi8-QYc6MkBH-S7-B_km--Ry1y6e0pONtmMiuITnj3xBvKpLp3jusJ_bPvRsBR61DwrTth1C7nurqdonfL2fgit3-1vdsP92lK1ykfqsHrg9YkH-QW5VYbqU2vtxwJ1rU41By73gPHT5SFUUcgCxgi9TWKWFK7x6m_6Z65mLTRgR9DKNJYmqvCjPSe438RGzkPPn7Omq6i4h8Y6kShK4BC5-4OVbja"/>
+</div>
+</div>
+</section>
+<!-- Professional Profile -->
+<section class="py-section-gap px-8 bg-surface-container-low border-b border-outline-variant">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="col-span-1 md:col-span-4">
+<h2 class="font-headline-md text-headline-md text-on-background sticky top-32">
+                    系统思维，<br/>降维打击。
+                </h2>
+<div class="h-1 w-16 bg-primary mt-6"></div>
+</div>
+<div class="col-span-1 md:col-span-8">
+<div class="prose max-w-none font-body-lg text-body-lg text-on-surface-variant space-y-8">
+<p class="text-on-background font-medium text-2xl leading-relaxed">
+                        在制造业，效率就是生命。但大多数企业的数字化转型，却成了一场吞噬利润的灾难。
+                    </p>
+<p>
+                        过去十年，我见证了无数工厂被过度包装的ERP系统拖垮。那些系统复杂、庞大、充满了永远用不上的功能，却偏偏无法解决一线车间最基础的排产痛点。
+                    </p>
+<p>
+                        我的理念很简单：软件不应该是主角，生产才是。我通过剥离非核心模块，利用轻量级微服务架构，为企业打造真正顺手的数字化工具。不卖焦虑，只交交付结果。
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 pt-12 border-t border-outline-variant">
+<div>
+<div class="font-headline-lg text-headline-lg text-primary mb-2">50+</div>
+<div class="font-label-bold text-label-bold text-on-surface uppercase tracking-widest">成功实施企业</div>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-primary mb-2">30%</div>
+<div class="font-label-bold text-label-bold text-on-surface uppercase tracking-widest">平均效率提升</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Articles (Bento Grid) -->
+<section class="py-section-gap px-8 bg-surface-container-lowest" id="articles">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">深度洞察</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">关于工业软件、管理逻辑与技术本质的硬核思考。</p>
+</div>
+<button class="hidden sm:flex border border-outline-variant text-on-surface font-label-bold text-label-bold px-6 py-3 rounded-DEFAULT hover:bg-surface-variant transition-colors items-center gap-2">
+                    查看全部 <span class="material-symbols-outlined text-[18px]">east</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[minmax(300px,_auto)]">
+<!-- Large Card -->
+<article class="md:col-span-8 md:row-span-2 group cursor-pointer flex flex-col border border-outline-variant bg-surface overflow-hidden relative">
+<div class="h-[60%] overflow-hidden">
+<img alt="Factory automation" class="w-full h-full object-cover grayscale-[30%] group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700 ease-in-out" data-alt="wide shot of a clean modern automated factory floor with robotic arms moving precisely under bright industrial fluorescent lighting with deep blue architectural accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLUihpWMsFBU_vuEYDEDEW3UyZBiFchQn5WX0yLgIp1C1xoxmWWkfRYqunaPtjyXFnW7gNMro45sfSky0ntTnWM5p6jVrbj0VVM_6I6rQsmLxa_FV4J2lUJQbw_M1zgYHd3KI2ZphoBCwDBoxBKFI9kFoycKJy3lYzJKlZQENgUstF6B8ntNMffcnWKjZPwNlMupjRC4wbAtBsI5BYNJv0GhSn3QUDYUlscborZQbnyzEV3YClx_2WBVXvV5S9dBTanpvqJN784ao2"/>
+</div>
+<div class="p-8 flex-1 flex flex-col justify-between bg-surface z-10">
+<div>
+<span class="inline-block bg-surface-variant text-on-surface-variant font-label-bold text-[12px] px-3 py-1 uppercase tracking-widest mb-4">ERP架构</span>
+<h3 class="font-headline-md text-headline-md text-on-background leading-tight mb-4 group-hover:text-primary transition-colors">为什么你的ERP项目注定失败？论业务边界与系统耦合。</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">剖析大包大揽式企业资源计划系统的致命弱点，以及如何通过领域驱动设计重构中小企业的IT基础设施。</p>
+</div>
+</div>
+</article>
+<!-- Small Card 1 -->
+<article class="md:col-span-4 border border-outline-variant bg-surface p-8 flex flex-col justify-between group cursor-pointer hover:border-primary transition-colors">
+<div>
+<span class="inline-block bg-surface-variant text-on-surface-variant font-label-bold text-[12px] px-3 py-1 uppercase tracking-widest mb-4">MES系统</span>
+<h3 class="font-body-lg text-body-lg font-bold text-on-background leading-tight mb-3 group-hover:text-primary transition-colors">车间数据采集的伪需求</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">别为了好看的看板而收集垃圾数据。讨论制造执行系统中真正有价值的关键指标。</p>
+</div>
+<div class="mt-6 flex items-center text-primary font-label-bold text-label-bold">
+                        阅读全文 <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</div>
+</article>
+<!-- Small Card 2 -->
+<article class="md:col-span-4 border border-outline-variant bg-surface p-8 flex flex-col justify-between group cursor-pointer hover:border-primary transition-colors">
+<div>
+<span class="inline-block bg-surface-variant text-on-surface-variant font-label-bold text-[12px] px-3 py-1 uppercase tracking-widest mb-4">敏捷管理</span>
+<h3 class="font-body-lg text-body-lg font-bold text-on-background leading-tight mb-3 group-hover:text-primary transition-colors">从看板到精益：软件工程能教给制造业什么？</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">跨界探讨：如何将软件开发中的敏捷理念引入传统的硬件生产流程中，打破部门墙。</p>
+</div>
+<div class="mt-6 flex items-center text-primary font-label-bold text-label-bold">
+                        阅读全文 <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</div>
+</article>
+</div>
+<button class="w-full sm:hidden mt-8 border border-outline-variant text-on-surface font-label-bold text-label-bold px-6 py-4 rounded-DEFAULT hover:bg-surface-variant transition-colors flex justify-center items-center gap-2">
+                查看全部深度洞察 <span class="material-symbols-outlined text-[18px]">east</span>
+</button>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-section-gap px-8 bg-primary text-on-primary border-t border-primary-container">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg mb-6 text-white">拒绝平庸的管理常识。</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-10">每周一封实战复盘邮件。不废话，只讲工业软件实施的血泪教训与最佳实践。加入 15,000+ 制造从业者的私密圈子。</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+<input class="flex-1 bg-primary-container border border-primary-container text-white placeholder-primary-fixed-dim px-6 py-4 rounded-DEFAULT focus:outline-none focus:border-white focus:ring-1 focus:ring-white font-body-md text-body-md transition-all" placeholder="您的工作邮箱" required="" type="email"/>
+<button class="bg-white text-primary font-label-bold text-label-bold px-8 py-4 rounded-DEFAULT hover:bg-surface-variant transition-colors whitespace-nowrap" type="submit">
+                    立即订阅
+                </button>
+</form>
+<p class="font-body-md text-[12px] text-primary-fixed-dim mt-6 uppercase tracking-wider">随时可以取消订阅。绝不发送垃圾邮件。</p>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full border-t mt-32 border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-8 py-16 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-lg font-bold text-blue-900 dark:text-white">智造专家</div>
+<div class="flex gap-6 font-['Work_Sans'] text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400">
+<a class="hover:text-blue-900 dark:hover:text-white underline transition-all opacity-100 hover:opacity-80" href="#">隐私政策</a>
+<a class="hover:text-blue-900 dark:hover:text-white underline transition-all opacity-100 hover:opacity-80" href="#">服务条款</a>
+<a class="hover:text-blue-900 dark:hover:text-white underline transition-all opacity-100 hover:opacity-80" href="#">粤ICP备12345678号</a>
+</div>
+<div class="text-blue-900 dark:text-blue-400 font-['Work_Sans'] text-sm uppercase tracking-widest">
+                © 2024 工业制造软件专家. 保留所有权利。
+            </div>
+</div>
+</footer>
+</body></html>

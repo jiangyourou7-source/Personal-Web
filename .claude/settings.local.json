@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(winget install *)",
+      "PowerShell(Start-Process winget -ArgumentList \"install GitHub.cli --accept-package-agreements --accept-source-agreements --force\" -Verb RunAs -Wait 2>&1)",
+      "PowerShell(gh *)",
+      "PowerShell(npm install *)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(Start-Process winget -ArgumentList \"install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements --force\" -Verb RunAs -Wait 2>&1)",
+      "PowerShell(npm *)",
+      "PowerShell(Set-ExecutionPolicy *)",
+      "WebFetch(domain:localhost)",
+      "PowerShell($response = Invoke-WebRequest -Uri \"http://localhost:3000/\" -UseBasicParsing -TimeoutSec 10 2>&1; if \\($response.StatusCode -eq 200\\) { Write-Output \"Status: $\\($response.StatusCode\\)\"; Write-Output \"Content length: $\\($response.Content.Length\\)\"; Write-Output \"Contains root div: $\\($response.Content.Contains\\('id=\"\"root\"\"'\\)\\)\"; Write-Output \"Contains main.tsx: $\\($response.Content.Contains\\('main.tsx'\\)\\)\" } else { Write-Output \"Error: $response\" })"
+    ]
+  }
+}

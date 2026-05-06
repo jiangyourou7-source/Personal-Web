@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #f4f8ff;
+  --color-surface: #ffffff;
+  --color-surface-muted: #eaf1ff;
+  --color-surface-soft: #f8fbff;
+  --color-border: #cddbf6;
+  --color-border-strong: #9db8eb;
+  --color-primary: #1d4ed8;
+  --color-primary-strong: #1e40af;
+  --color-primary-soft: #dbeafe;
+  --color-primary-container: #dbeafe;
+  --color-primary-fixed-dim: #93c5fd;
+  --color-text: #10213f;
+  --color-text-muted: #4f6285;
+  --color-text-soft: #7b8aa8;
+  --color-on-surface: #10213f;
+  --color-on-surface-variant: #4f6285;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #1e3a5f;
+  --color-outline: #9db8eb;
+  --color-outline-variant: #cddbf6;
+  --color-error-container: #fca5a5;
+
+  --font-family-body: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-family-display: 'Noto Serif SC', 'Source Serif 4', serif;
+
+  --spacing-container: 1180px;
+  --spacing-gutter: 32px;
+  --spacing-section: 112px;
+}
+
+body {
+  background: linear-gradient(180deg, #f7faff 0%, #f2f7ff 100%);
+  color: var(--color-text);
+  font-family: var(--font-family-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+button {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+::selection {
+  background: #dbeafe;
+  color: #10213f;
+}
+
+.page-shell {
+  margin: 0 auto;
+  max-width: var(--spacing-container);
+  padding-left: var(--spacing-gutter);
+  padding-right: var(--spacing-gutter);
+}
+
+.editorial-kicker {
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.editorial-title {
+  font-family: var(--font-family-display);
+  font-size: clamp(2.75rem, 5vw, 5.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.04;
+}
+
+.editorial-subtitle {
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+  line-height: 1.9;
+}
+
+.section-rule {
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-primary) 0, var(--color-border) 35%, transparent 100%);
+}
+
+.paper-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 30px rgba(29, 78, 216, 0.06);
+}
